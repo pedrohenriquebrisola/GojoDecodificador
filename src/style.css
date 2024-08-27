@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+
+header {
+  height: 130px; /* Ajuste a altura do header conforme necessário */
+  display: flex;
+  align-items: flex-start; /* Centraliza o conteúdo verticalmente no header */
+  justify-content: flex-start;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #021526;
+  color: #e2e2b6;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.formulario_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.texto_princinpal {
+  font-size: 2.25rem;
+  color: #fff;
+  text-shadow: 0 0 5px #6eacda, 0 0 10px #6eacda, 0 0 15px #6eacda,
+    0 0 20px #6eacda, 0 0 30px #6eacda, 0 0 40px #6eacda;
+}
+
+#texto {
+  width: 100%;
+  height: 350px;
+  margin: 5px 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #021526;
+  color: #6eacda;
+  border: none;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #6eacda; /* Substitua pela cor desejada */
+  opacity: 0.8; /* Opcional: define a opacidade do placeholder */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#header-img {
+  width: 140px;
+  height: auto;
+}
+
+#gojo {
+  width: 300px;
+  height: auto;
+  margin-top: 30px;
+}
+
+#criptografar,
+#descriptografar,
+#copiar {
+  width: 190px;
+  height: 70px;
+  border: 3px solid black;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #e2e2b6;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+  color: #03346e;
+}
+
+#criptografar {
+  background: #03346e;
+  color: #e2e2b6;
+}
+
+#requisitos-texto {
+  white-space: nowrap;
+}
+
+.resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #315cfd;
+  background-color: #03346e;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px; /* Define a largura fixa do contêiner */
+  height: 615px; /* Define a altura fixa do contêiner */
+}
+
+#texto-criptografado {
+  display: none;
+  overflow: auto;
+  max-height: 500px;
+  text-align: left;
+}
+
+.footer__logo {
+  width: 40px;
+  height: auto;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #021526;
+  color: #e2e2b6;
+}
+
+.mensagem_result {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes blink {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+.blink-animation {
+  animation-name: blink;
+  width: 280px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}

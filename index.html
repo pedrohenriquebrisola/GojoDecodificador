@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="header-img" src="/assets/gojoCat.png" alt="gojocat" />
+    </header>
+    <main class="main">
+      <div class="formulario_text">
+        <label for="texto" class="texto_princinpal">Gojo Decodificador</label>
+        <textarea
+          name="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Digite um texto aqui por favor ... "
+        ></textarea>
+        <span id="requisitos-texto">
+          <img src="assets/Vector.png" alt="Exclamação" />
+          Apenas letras minúsculas e sem acento.
+        </span>
+        <div class="buttons">
+          <button id="criptografar">Criptografar</button>
+          <button id="descriptografar">Descriptografar</button>
+        </div>
+      </div>
+      <div class="resultado">
+        <p id="texto-criptografado" style="display: none">aa</p>
+        <div id="result_areaid" class="result__area" style="display: block">
+          <img id="gojo" src="assets/gojo.png" alt="Gojo andando e sorrindo" />
+          <p class="mensagem_result">Nenhuma mensagem encontrada</p>
+          <p class="mensagem_result">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <button id="copiar" disabled>Copiar</button>
+      </div>
+    </main>
+    <footer id="footer">
+      <span>Desenvolvido por Pedro Henrique B. Silva</span>
+      <a href="https://github.com/pedrohenriquebrisola" target="_blank">
+        <img class="footer__logo" src="/assets/github.png" alt="logo github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/pedro-brisola-525b6728a/"
+        target="_blank"
+      >
+        <img
+          class="footer__logo"
+          src="/assets/linkedin.png"
+          alt="logo linkedin"
+        />
+      </a>
+    </footer>
+    <script src="src/main.js"></script>
+  </body>
+</html>
